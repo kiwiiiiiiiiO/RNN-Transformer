@@ -13,5 +13,7 @@
 
 Click the buttons below to open each homework notebook in Colab:
 
-- **HW1**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW1/HW1_Code.ipynb)
-- **HW2**: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW2/HW2_Code.ipynb)
+| Homework | Colab Link |
+|----------|------------|
+| **HW1**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW1/HW1_Code.ipynb) |
+| **HW2**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW2/HW2_Code.ipynb) |
