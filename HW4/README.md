@@ -9,4 +9,4 @@ Click the buttons below to open each homework notebook in Colab:
 | **Test_5**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/ViT_SWIN_test_5.ipynb) |
 | **Test_6**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/ViT_SWIN_test_6.ipynb) |
 | **Test_7**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/ViT_SWIN_test_7.ipynb) |
-| **Test**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/VIT_SWIN_test.ipynb) |
+| **Test**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/VIT_Swin_test.ipynb) |
