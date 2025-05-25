@@ -1,5 +1,48 @@
+# Vision Transformer vs SWIN Transformer on CIFAR-10
 
-## Open in Google Colab
+This repository contains a comprehensive comparison of Vision Transformer (ViT) and SWIN Transformer models on the CIFAR-10 classification task, including performance analysis and attention visualization using Grad-CAM.
+
+## 📁 Repository Structure
+
+### 📊 Experimental Notebooks
+
+The repository contains multiple Jupyter notebooks implementing different experimental configurations:
+
+| Notebook                  | Description                           | Model Configuration                                 |
+|---------------------------|---------------------------------------|-----------------------------------------------------|
+| **VIT_SWIN_test_4.ipynb** | Base Patch32 with Partial Fine-tuning | ViT Base Patch32 vs SWIN Base Patch4 Window7        |
+| **VIT_SWIN_test_5.ipynb** | Tiny Patch16 with Partial Fine-tuning | ViT Tiny Patch16 vs SWIN Tiny Patch4 Window7        |
+| **VIT_SWIN_test_6.ipynb** | Large Patch16 with Partial Fine-tuning| ViT Large Patch16 vs SWIN Large Patch4 Window7      |
+| **VIT_SWIN_test_7.ipynb** | Base Patch32 with Full Fine-tuning    | ViT Base Patch32 vs SWIN Base Patch4 Window7        |
+| **VIT_SWIN_test.ipynb**   | Combined Analysis and Visualization   | Comprehensive comparison with Grad-CAM              |
+
+### 📋 Documentation
+
+- **HW4_Report.pdf**: Complete research report with detailed analysis, methodology, results, and conclusions  
+- **README.md**: This file - repository overview and file descriptions
+
+## 🧪 Experimental Setup
+
+### Model Variants Tested
+
+**Vision Transformer (ViT):**
+- ViT-Tiny (5.5M parameters): `vit_tiny_patch16_224`
+- ViT-Base (87.5M parameters): `vit_base_patch32_224`  
+- ViT-Large (303.3M parameters): `vit_large_patch16_224`
+
+**SWIN Transformer:**
+- SWIN-Tiny (27.5M parameters): `swin_tiny_patch4_window7_224`
+- SWIN-Base (86.8M parameters): `swin_base_patch4_window7_224`
+- SWIN-Large (195.0M parameters): `swin_large_patch4_window7_224`
+
+### Fine-tuning Strategies
+
+1. **Partial Fine-tuning**: Only classification head and later layers are trained  
+2. **Full Fine-tuning**: All model parameters are updated during training
+
+## 🚀 Quick Start
+
+### Open in Google Cola
 
 Click the buttons below to open each homework notebook in Colab:
 
@@ -11,18 +54,17 @@ Click the buttons below to open each homework notebook in Colab:
 | **Test_7**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/ViT_SWIN_test_7.ipynb) |
 | **Test**  | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kiwiiiiiiiiO/RNN-Transformer/blob/main/HW4/ViT_SWIN_test.ipynb) |
 
+### Local Setup
 
-## Experiment Result
+```bash
+# Clone the repository
+git clone https://github.com/kiwiiiiiiiiO/RNN-Transformer.git
+cd RNN-Transformer/HW4
 
+# Install required dependencies
+pip install torch torchvision timm matplotlib numpy pandas
+pip install grad-cam opencv-python
 
-| Experiment | Model         | Params (M) | Finetune            | Accuracy |
-|------------|---------------|------------|----------------------|----------|
-| test_4     | ViT_base_p32  | 87.5M      | Partial Fine-tuning | 95.69%   |
-|            | Swin_base     | 86.8M      |                      | 97.63%   |
-| test_5     | ViT_tiny_p16  | 5.5M       | Partial Fine-tuning | 89.41%   |
-|            | Swin_tiny     | 27.5M      |                      | 97.32%   |
-| test_6     | ViT_large_p16 | 303.3M     | Partial Fine-tuning | 98.55%   |
-|            | Swin_large    | 195.0M     |                      | 99.01%   |
-| test_7     | ViT_base_p32  | 87.5M      | Full Fine-tuning    | 92.69%   |
-|            | Swin_base     | 86.8M      |                      | 94.52%   |
+# Run any notebook
+jupyter notebook VIT_SWIN_test_4.ipynb
 
